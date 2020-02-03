@@ -12,8 +12,11 @@ DEBOUNCE_TYPE			= eager_pr
 # Lets try and save some space eh?
 MOUSEKEY_ENABLE   = no
 EXTRAKEY_ENABLE   = no
-CONSOLE_ENABLE		= no
-COMMAND_ENABLE		= no
+CONSOLE_ENABLE    = no
+COMMAND_ENABLE    = no
+BOOTMAGIC_ENABLE  = no
+SPACE_CADET_ENABLE  = no
+MAGIC_ENABLE = no
 
 SRC							+= matrix.c sten.c
 QUANTUM_LIB_SRC += i2c_master.c

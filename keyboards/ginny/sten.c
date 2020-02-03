@@ -293,6 +293,27 @@ void processChord(bool useFakeSteno) {
 		}
 		return;
 	}
+	else if (cChord & LP) {
+        uint32_t ch = cChord;
+        cChord = LP;
+        processQwerty(false);
+        cChord = ch;
+        cChord &= ~(LP);
+		for (int i = 0; i <= chordIndex; i++)
+			chordState[i] &= ~(LP);
+        if (processQwerty(true) == cChord) {
+            processQwerty(false);
+            // Repeat logic
+            if (repeatFlag) {
+                restoreState();
+                repeatFlag = false;
+                processChord(false);
+            } else {
+                saveState(cChord);
+            }
+            return;
+        }
+	}
 
 	// Iterate through chord picking out the individual 
 	// and longest chords
@@ -400,6 +421,16 @@ void REPEAT(void) {
 }
 void SET_STICKY(uint32_t stick) {
 	stickyBits = stick;
+	return;
+}
+void SET_SHIFT(bool shift) {
+    if (shift) {
+        stickyBits |= (LP); 
+        cChord |= (LP);
+        chordState[chordIndex++] = cChord;
+    } else {
+        stickyBits &= ~(LP);
+    }
 	return;
 }
 void SWITCH_LAYER(int layer) {

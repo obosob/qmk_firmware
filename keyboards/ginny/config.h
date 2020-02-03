@@ -24,10 +24,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Space saving jazz
 #define NO_ACTION_LAYER
 #define NO_ACTION_TAPPING
-#define NO_ACTION_ONESHOT
-
-#define BOOTMAGIC_LITE_ROW 9
-#define BOOTMAGIC_LITE_COLUMN 3
 
 #define VERBOSE
 

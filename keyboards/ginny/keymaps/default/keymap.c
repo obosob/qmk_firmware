@@ -23,6 +23,10 @@
 #include QMK_KEYBOARD_H
 #include "sten.h"
 
+enum custom_keycodes {
+    GSFT = SAFE_RANGE
+};
+
 // Asetniop aliases, to Ginny Fingers
 #define AA		GLP
 #define AS		GLR
@@ -37,7 +41,7 @@
 #define AR		GRT
 
 #define NUM		RES1						// Sticky Layer 1
-#define USR   RES2						// Sticky Layer 2
+#define USR     RES2						// Sticky Layer 2
 #define CMD		RES2 | RES1			// Sticky Layer 3
 
 // Asetniop layout see above link
@@ -76,10 +80,19 @@ uint32_t processQwerty(bool lookup) {
 	return 0;
 }
 
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case GSFT:
+            SET_SHIFT (record->event.pressed);
+            break;
+    }
+    return true;
+}
+
 // QMK layout, Make all your changesw in processQwerty!
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = LAYOUT_ginny(
-		STN_S1, STN_S2, STN_TL, STN_KL, STN_PL, STN_WL, STN_HL, STN_RL, STN_ST1, STN_ST2
+		STN_S1, STN_S2, STN_TL, STN_KL, GSFT, STN_WL, STN_HL, STN_RL, STN_ST1, STN_ST2
 )};
 
 // Don't fuck with this, thanks.

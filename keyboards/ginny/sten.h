@@ -28,6 +28,7 @@ void 			restoreState(void);
 void 			SEND(uint8_t kc);
 void 			REPEAT(void);
 void 			SET_STICKY(uint32_t);
+void 			SET_SHIFT(bool);
 void 			SWITCH_LAYER(int);
 void 			CLICK_MOUSE(uint8_t);
 

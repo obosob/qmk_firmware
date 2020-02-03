@@ -1,5 +1,5 @@
 	// Thumb Keys
-	P(AL,														SEND(KC_LSFT));
+	P(AL,														set_oneshot_mods(MOD_LSFT));
 	P(AR,														SEND(KC_SPC));
 	
 	// Layer Switches 
