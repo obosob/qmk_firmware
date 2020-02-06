@@ -209,15 +209,14 @@ uint16_t processChord(uint16_t c, bool test) {
             
         CH  (ASPC,                                                        register_code(KC_SPC))
         CH  (AN | AI | AO | AP,                                           register_code(KC_ENT))
-            
-        CH  (AA | AS | AE | AT,                                           send_shiftable_string("were "))
-        CH  (AA | AS | AE | AT | AN | AI | AO | AP,                       send_shiftable_string("especially "))
-        CH  (AA | AS | AE | AT | AN | AI | AO | AP | RIGHT,               send_shiftable_string("himself "))
+        CH  (AN | AS | AE | AT,                                           register_code(KC_TAB))
+
+        CH  (AA | AS | AE | AT | ASPC,                                    send_shiftable_string("were "))
+        CH  (AA | AS | AE | AT | AN | AI | AO | AP | ASPC,                send_shiftable_string("especially "))
+        CH  (AA | AS | AE | AT | AN | AI | AO | AP | ASPC | RIGHT,        send_shiftable_string("himself "))
             
         CH  (AA | AT | AN | AP,                                           set_mode(NUM))
         CH  (AA | AT | AN | AP | NUM,                                     set_mode(0))
-        CH_S(AA | AS | AE | AT | AN | AI | AO | AP | ASPC,                noop(),set_mode(USR))
-        CH_S(AA | AS | AE | AT | AN | AI | AO | AP | ASPC | USR,          noop(),set_mode(0))
             
         CH  (AA | NUM,                                                    register_code(KC_1))
         CH  (AS | NUM,                                                    register_code(KC_2))
@@ -237,13 +236,6 @@ uint16_t processChord(uint16_t c, bool test) {
         CH  (AA | AS | AE | AT | NUM,                                     register_code(KC_TAB))
     }
 
-    if((c & (RIGHT | ASFT)) == (RIGHT | ASFT)) {
-        uint16_t candidate = processChord(c & ~(ASFT), true);
-        if(candidate == (c & ~(ASFT))) {
-            set_mods(MOD_LSFT | get_mods());
-            return processChord(c & ~(ASFT), false);
-        }
-    }
     if(c & RIGHT) {
 #ifndef NO_DEBUG 
         uprintf("No right chord found, falling back\n");
@@ -261,13 +253,6 @@ uint16_t processChord(uint16_t c, bool test) {
         uprintf("No chord found on mode, falling back\n");
 #endif
         return processChord(c & ~(mode), false);
-    }
-    if(c & ASFT) {
-#ifndef NO_DEBUG 
-        uprintf("No chord found with shift, pressing shift and falling back\n");
-#endif
-        set_mods(MOD_LSFT | get_mods());
-        return processChord(c & ~(ASFT), false);
     }
     return 0;
 }

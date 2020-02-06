@@ -1,245 +1,383 @@
-P(AO,                                                       SEND(KC_O));
-P(AE,                                                       SEND(KC_E));
-P(AS,                                                       SEND(KC_S));
-P(AP,                                                       SEND(KC_P));
-P(AN,                                                       SEND(KC_N));
-P(AT,                                                       SEND(KC_T));
-P(AI,                                                       SEND(KC_I));
-P(AA,                                                       SEND(KC_A));
-P(AI | AO,                                                  SEND(KC_L));
-P(AN | AP,                                                  SEND(KC_M));
-P(AS | AO,                                                  SEND(KC_DOT));
-P(AA | AP,                                                  SEND(KC_LSFT);SEND(KC_SLSH));
-P(AL | AA | AP,                                             SEND(KC_SLSH));
-P(AA | AE,                                                  SEND(KC_X));
-P(AS | AP,                                                  SEND(KC_LSFT);SEND(KC_0));
-P(AL | AS | AP,                                             SEND(KC_RBRC));
-P(AT | AN,                                                  SEND(KC_B));
-P(AO | AP,                                                  SEND(KC_SCLN));
-P(AA | AS,                                                  SEND(KC_W));
-P(AN | AI,                                                  SEND(KC_H));
-P(AE | AI,                                                  SEND(KC_COMM));
-P(AA | AN,                                                  SEND(KC_Q));
-P(AS | AN,                                                  SEND(KC_J));
-P(AT | AI,                                                  SEND(KC_V));
-P(AT | AP,                                                  SEND(KC_BSPC));
-P(AS | AT,                                                  SEND(KC_C));
-P(AA | AI,                                                  SEND(KC_Z));
-P(AE | AO,                                                  SEND(KC_MINS));
-P(AE | AN,                                                  SEND(KC_Y));
-P(AA | AT,                                                  SEND(KC_F));
-P(AS | AE,                                                  SEND(KC_D));
-P(AT | AO,                                                  SEND(KC_G));
-P(AI | AP,                                                  SEND(KC_LSFT);SEND(KC_1));
-P(AE | AP,                                                  SEND(KC_QUOT));
-P(AS | AI,                                                  SEND(KC_K));
-P(AE | AT,                                                  SEND(KC_R));
-P(AA | AO,                                                  SEND(KC_LSFT);SEND(KC_9));
-P(AL | AA | AO,                                             SEND(KC_LBRC));
-P(AN | AO,                                                  SEND(KC_U));
-P(AS | AE | AP,                                             SEND_STRING("deep ") );
-P(AA | AS | AT,                                             SEND_STRING("fact ") );
-P(AT | AI | AO,                                             SEND_STRING("lot ") );
-P(AA | AS | AE,                                             SEND_STRING("we ") );
-P(AE | AI | AP,                                             SEND_STRING("'i ") );
-P(AS | AE | AT,                                             SEND_STRING("set ") );
-P(AA | AI | AP,                                             SEND_STRING("pizza ") );
-P(AS | AT | AI,                                             SEND_STRING("its ") );
-P(AT | AO | AP,                                             SEND_STRING("top ") );
-P(AS | AT | AO,                                             SEND_STRING("cost ") );
-P(AE | AT | AI,                                             SEND_STRING("ever ") );
-P(AA | AT | AP,                                             SEND_STRING("pat ") );
-P(AE | AN | AO,                                             SEND_STRING("you ") );
-P(AA | AE | AT,                                             SEND_STRING("are ") );
-P(AS | AT | AN,                                             SEND_STRING("bc ") );
-P(AE | AT | AN,                                             SEND_STRING("be ") );
-P(AS | AN | AO,                                             SEND_STRING("us ") );
-P(AA | AS | AP,                                             SEND_STRING("pass ") );
-P(AS | AI | AO,                                             SEND_STRING("look ") );
-P(AE | AT | AO,                                             SEND_STRING("or ") );
-P(AE | AO | AP,                                             SEND_STRING("pope ") );
-P(AE | AN | AP,                                             SEND_STRING("my ") );
-P(AA | AS | AO,                                             SEND_STRING("wow ") );
-P(AA | AN | AP,                                             SEND_STRING("man ") );
-P(AE | AI | AO,                                             SEND_STRING("lie ") );
-P(AS | AN | AI,                                             SEND_STRING("his ") );
-P(AN | AO | AP,                                             SEND_STRING("up ") );
-P(AA | AS | AI,                                             SEND_STRING("ask ") );
-P(AA | AN | AI,                                             SEND_STRING("ah ") );
-P(AA | AE | AN,                                             SEND_STRING("any ") );
-P(AT | AI | AP,                                             SEND_STRING("tip ") );
-P(AA | AS | AN,                                             SEND_STRING("san ") );
-P(AA | AT | AI,                                             SEND_STRING("if ") );
-P(AT | AN | AI,                                             SEND_STRING("bit ") );
-P(AS | AI | AP,                                             SEND_STRING("sip ") );
-P(AT | AN | AO,                                             SEND_STRING("but ") );
-P(AA | AI | AO,                                             SEND_STRING("all ") );
-P(AS | AE | AN,                                             SEND_STRING("eyes ") );
-P(AA | AE | AI,                                             SEND_STRING("ix ") );
-P(AE | AN | AI,                                             SEND_STRING("he ") );
-P(AA | AT | AO,                                             SEND_STRING("of ") );
-P(AS | AE | AO,                                             SEND_STRING("do ") );
-P(AN | AI | AP,                                             SEND_STRING("him ") );
-P(AA | AT | AN,                                             SEND_STRING("fan ") );
-P(AE | AT | AP,                                             SEND_STRING("per ") );
-P(AS | AE | AI,                                             SEND_STRING("did ") );
-P(AN | AI | AO,                                             SEND_STRING("oh ") );
-P(AI | AO | AP,                                             SEND_STRING("pool ") );
-P(AS | AN | AP,                                             SEND_STRING("ms ") );
-P(AA | AS | AN | AI,                                        SEND_STRING("has ") );
-P(AE | AT | AN | AP,                                        SEND_STRING("mr ") );
-P(AA | AT | AN | AO,                                        SEND_STRING("about ") );
-P(AA | AS | AT | AI,                                        SEND_STRING("wait ") );
-P(AA | AE | AT | AO,                                        SEND_STRING("for ") );
-P(AS | AE | AT | AP,                                        SEND_STRING("step ") );
-P(AS | AI | AO | AP,                                        SEND_STRING("lips ") );
-P(AA | AS | AT | AN,                                        SEND_STRING("can ") );
-P(AS | AE | AN | AI,                                        SEND_STRING("she ") );
-P(AA | AE | AI | AO,                                        SEND_STRING("alex ") );
-P(AA | AE | AN | AP,                                        SEND_STRING("many ") );
-P(AA | AS | AT | AO,                                        SEND_STRING("two ") );
-P(AS | AE | AT | AO,                                        SEND_STRING("good ") );
-P(AE | AT | AN | AI,                                        SEND_STRING("the ") );
-P(AS | AN | AI | AO,                                        SEND_STRING("john ") );
-P(AA | AN | AI | AO,                                        SEND_STRING("hall ") );
-P(AE | AT | AN | AO,                                        SEND_STRING("your ") );
-P(AS | AT | AI | AP,                                        SEND_STRING("pick ") );
-P(AS | AT | AI | AO,                                        SEND_STRING("still ") );
-P(AA | AT | AI | AO,                                        SEND_STRING("fall ") );
-P(AT | AI | AO | AP,                                        SEND_STRING("pilot ") );
-P(AT | AN | AO | AP,                                        SEND_STRING("put ") );
-P(AS | AE | AI | AP,                                        SEND_STRING("keep ") );
-P(AA | AS | AT | AP,                                        SEND_STRING("past ") );
-P(AA | AS | AE | AI,                                        SEND_STRING("said ") );
-P(AS | AN | AO | AP,                                        SEND_STRING("jump ") );
-P(AE | AN | AO | AP,                                        SEND_STRING("money ") );
-P(AA | AN | AI | AP,                                        SEND_STRING("pain ") );
-P(AA | AI | AO | AP,                                        SEND_STRING("lap ") );
-P(AS | AE | AT | AN,                                        SEND_STRING("best ") );
-P(AS | AE | AN | AO,                                        SEND_STRING("done ") );
-P(AA | AE | AN | AO,                                        SEND_STRING("anyone ") );
-P(AA | AN | AO | AP,                                        SEND_STRING("mao ") );
-P(AA | AE | AT | AI,                                        SEND_STRING("five ") );
-P(AT | AN | AI | AO,                                        SEND_STRING("into ") );
-P(AS | AE | AO | AP,                                        SEND_STRING("possessed ") );
-P(AE | AN | AI | AP,                                        SEND_STRING("i'm ") );
-P(AS | AE | AN | AP,                                        SEND_STRING("seemed ") );
-P(AA | AS | AN | AO,                                        SEND_STRING("now ") );
-P(AS | AT | AO | AP,                                        SEND_STRING("stop ") );
-P(AT | AN | AI | AP,                                        SEND_STRING("tim ") );
-P(AE | AT | AO | AP,                                        SEND_STRING("poor ") );
-P(AA | AT | AO | AP,                                        SEND_STRING("gap ") );
-P(AE | AT | AI | AO,                                        SEND_STRING("over ") );
-P(AA | AS | AN | AP,                                        SEND_STRING("mass ") );
-P(AA | AS | AE | AO,                                        SEND_STRING("wood ") );
-P(AS | AE | AT | AI,                                        SEND_STRING("tried ") );
-P(AA | AE | AT | AP,                                        SEND_STRING("part ") );
-P(AS | AT | AN | AO,                                        SEND_STRING("just ") );
-P(AS | AN | AI | AP,                                        SEND_STRING("miss ") );
-P(AA | AS | AE | AP,                                        SEND_STRING("passed ") );
-P(AA | AE | AN | AI,                                        SEND_STRING("yeah ") );
-P(AE | AN | AI | AO,                                        SEND_STRING("only ") );
-P(AA | AS | AE | AN,                                        SEND_STRING("and ") );
-P(AA | AS | AO | AP,                                        SEND_STRING("soap ") );
-P(AS | AT | AN | AI,                                        SEND_STRING("this ") );
-P(AA | AE | AT | AN,                                        SEND_STRING("next ") );
-P(AA | AS | AE | AT,                                        SEND_STRING("were ") );
-P(AE | AI | AO | AP,                                        SEND_STRING("people ") );
-P(AA | AT | AN | AI,                                        SEND_STRING("that ") );
-P(AA | AS | AI | AO,                                        SEND_STRING("will ") );
-P(AE | AT | AI | AP,                                        SEND_STRING("i've ") );
-P(AS | AE | AI | AO,                                        SEND_STRING("like ") );
-P(AN | AI | AO | AP,                                        SEND(KC_ENT));
-P(AA | AT | AN | AP,                                        SET_STICKY(NUM));
-P(AA | AS | AT | AI | AP,                                   SEND_STRING("pack ") );
-P(AE | AN | AI | AO | AP,                                   SEND_STRING("home ") );
-P(AS | AT | AI | AO | AP,                                   SEND_STRING("politics ") );
-P(AA | AT | AN | AO | AP,                                   SEND_STRING("among ") );
-P(AS | AE | AN | AO | AP,                                   SEND_STRING("some ") );
-P(AA | AS | AE | AN | AP,                                   SEND_STRING("made ") );
-P(AA | AE | AT | AO | AP,                                   SEND_STRING("page ") );
-P(AA | AS | AE | AN | AI,                                   SEND_STRING("had ") );
-P(AA | AS | AT | AN | AP,                                   SEND_STRING("camp ") );
-P(AA | AS | AN | AO | AP,                                   SEND_STRING("woman ") );
-P(AA | AE | AT | AN | AO,                                   SEND_STRING("before ") );
-P(AA | AS | AT | AN | AO,                                   SEND_STRING("town ") );
-P(AA | AS | AT | AI | AO,                                   SEND_STRING("last ") );
-P(AA | AE | AI | AO | AP,                                   SEND_STRING("apple ") );
-P(AA | AS | AT | AO | AP,                                   SEND_STRING("gaps ") );
-P(AA | AS | AE | AI | AP,                                   SEND_STRING("speak ") );
-P(AE | AT | AN | AO | AP,                                   SEND_STRING("more ") );
-P(AA | AS | AE | AT | AI,                                   SEND_STRING("first ") );
-P(AA | AS | AE | AN | AO,                                   SEND_STRING("down ") );
-P(AA | AE | AN | AI | AP,                                   SEND_STRING("happy ") );
-P(AA | AS | AN | AI | AO,                                   SEND_STRING("who ") );
-P(AA | AE | AN | AI | AO,                                   SEND_STRING("alone ") );
-P(AS | AE | AT | AI | AP,                                   SEND_STRING("it's ") );
-P(AS | AE | AN | AI | AO,                                   SEND_STRING("should ") );
-P(AS | AE | AT | AN | AI,                                   SEND_STRING("these ") );
-P(AS | AE | AI | AO | AP,                                   SEND_STRING("spoke ") );
-P(AA | AE | AT | AN | AI,                                   SEND_STRING("have ") );
-P(AS | AE | AT | AN | AP,                                   SEND_STRING("mrs ") );
-P(AA | AE | AT | AI | AP,                                   SEND_STRING("private ") );
-P(AA | AN | AI | AO | AP,                                   SEND_STRING("human ") );
-P(AA | AS | AE | AT | AP,                                   SEND_STRING("we're ") );
-P(AA | AS | AE | AT | AO,                                   SEND_STRING("words ") );
-P(AA | AS | AE | AO | AP,                                   SEND_STRING("exposed ") );
-P(AA | AE | AT | AN | AP,                                   SEND_STRING("matter ") );
-P(AS | AT | AN | AI | AP,                                   SEND_STRING("smith ") );
-P(AS | AE | AT | AO | AP,                                   SEND_STRING("process ") );
-P(AA | AS | AE | AI | AO,                                   SEND_STRING("well ") );
-P(AT | AN | AI | AO | AP,                                   SEND_STRING("might ") );
-P(AE | AT | AN | AI | AP,                                   SEND_STRING("them ") );
-P(AA | AT | AN | AI | AP,                                   SEND_STRING("path ") );
-P(AS | AE | AN | AI | AP,                                   SEND_STRING("mind ") );
-P(AA | AE | AT | AI | AO,                                   SEND_STRING("life ") );
-P(AA | AS | AN | AI | AP,                                   SEND_STRING("spanish ") );
-P(AS | AN | AI | AO | AP,                                   SEND_STRING("shop ") );
-P(AA | AT | AN | AI | AO,                                   SEND_STRING("again ") );
-P(AA | AT | AI | AO | AP,                                   SEND_STRING("plato ") );
-P(AS | AE | AT | AN | AO,                                   SEND_STRING("once ") );
-P(AS | AE | AT | AI | AO,                                   SEND_STRING("told ") );
-P(AE | AT | AI | AO | AP,                                   SEND_STRING("prove ") );
-P(AA | AS | AI | AO | AP,                                   SEND_STRING("pillow ") );
-P(AS | AT | AN | AO | AP,                                   SEND_STRING("most ") );
-P(AA | AS | AT | AN | AI,                                   SEND_STRING("with ") );
-P(AS | AT | AN | AI | AO,                                   SEND_STRING("such ") );
-P(AE | AT | AN | AI | AO,                                   SEND_STRING("other ") );
-P(AA | AS | AE | AT | AN,                                   SEND_STRING("years ") );
-P(AA | AS | AN | AI | AO | AP,                              SEND_STRING("small ") );
-P(AA | AE | AT | AN | AI | AO,                              SEND_STRING("another ") );
-P(AA | AS | AE | AT | AN | AI,                              SEND_STRING("where ") );
-P(AA | AE | AT | AN | AI | AP,                              SEND_STRING("remain ") );
-P(AA | AE | AN | AI | AO | AP,                              SEND_STRING("play ") );
-P(AS | AE | AN | AI | AO | AP,                              SEND_STRING("simply ") );
-P(AA | AE | AT | AI | AO | AP,                              SEND_STRING("april ") );
-P(AA | AS | AE | AT | AN | AO,                              SEND_STRING("because ") );
-P(AA | AS | AE | AT | AN | AP,                              SEND_STRING("came ") );
-P(AA | AS | AT | AN | AI | AP,                              SEND_STRING("captain ") );
-P(AA | AS | AE | AI | AO | AP,                              SEND_STRING("please ") );
-P(AA | AS | AE | AN | AI | AP,                              SEND_STRING("make ") );
-P(AA | AS | AE | AT | AO | AP,                              SEND_STRING("power ") );
-P(AS | AE | AT | AN | AI | AO,                              SEND_STRING("could ") );
-P(AS | AE | AT | AN | AO | AP,                              SEND_STRING("don't ") );
-P(AS | AE | AT | AI | AO | AP,                              SEND_STRING("replied ") );
-P(AA | AS | AE | AN | AO | AP,                              SEND_STRING("women ") );
-P(AA | AS | AE | AN | AI | AO,                              SEND_STRING("would ") );
-P(AA | AE | AT | AN | AO | AP,                              SEND_STRING("from ") );
-P(AS | AT | AN | AI | AO | AP,                              SEND_STRING("much ") );
-P(AS | AE | AT | AN | AI | AP,                              SEND_STRING("didn't ") );
-P(AA | AS | AT | AN | AO | AP,                              SEND_STRING("famous ") );
-P(AA | AS | AE | AT | AI | AP,                              SEND_STRING("paris ") );
-P(AA | AT | AN | AI | AO | AP,                              SEND_STRING("imagination ") );
-P(AE | AT | AN | AI | AO | AP,                              SEND_STRING("mother ") );
-P(AA | AS | AE | AT | AI | AO,                              SEND_STRING("work ") );
-P(AA | AS | AT | AI | AO | AP,                              SEND_STRING("political ") );
-P(AA | AS | AT | AN | AI | AO,                              SEND_STRING("without ") );
-P(AS | AE | AT | AN | AI | AO | AP,                         SEND_STRING("something ") );
-P(AA | AS | AE | AT | AN | AO | AP,                         SEND_STRING("company ") );
-P(AA | AS | AE | AN | AI | AO | AP,                         SEND_STRING("played ") );
-P(AA | AE | AT | AN | AI | AO | AP,                         SEND_STRING("family ") );
-P(AA | AS | AE | AT | AI | AO | AP,                         SEND_STRING("place ") );
-P(AA | AS | AT | AN | AI | AO | AP,                         SEND_STRING("almost ") );
-P(AA | AS | AE | AT | AN | AI | AP,                         SEND_STRING("that's ") );
-P(AA | AS | AE | AT | AN | AI | AO,                         SEND_STRING("already ") );
-P(AA | AS | AE | AT | AN | AI | AO | AP,                    SEND_STRING("himself ") );
+CH(AA | AS | ASPC, send_string("was "))
+CH(AS | AE | ASPC, send_string("see "))
+CH(AA | AS | AE | ASPC, send_string("we "))
+CH(AA | AT | ASPC, send_string("at "))
+CH(AA | AS | AT | ASPC, send_string("fact "))
+CH(AE | AT | ASPC, send_string("tree "))
+CH(AA | AE | AT | ASPC, send_string("are "))
+CH(AS | AE | AT | ASPC, send_string("set "))
+CH(AA | AS | AE | AT | ASPC, send_string("were "))
+CH(AA | AN | ASPC, send_string("an "))
+CH(AA | AS | AN | ASPC, send_string("san "))
+CH(AA | AS | AN | ASPC | RIGHT, send_string("jaw "))
+CH(AE | AN | ASPC, send_string("eye "))
+CH(AE | AN | ASPC | RIGHT, send_string("ye "))
+CH(AA | AE | AN | ASPC, send_string("any "))
+CH(AA | AE | AN | ASPC | RIGHT, send_string("nay "))
+CH(AS | AE | AN | ASPC, send_string("eyes "))
+CH(AS | AE | AN | ASPC | RIGHT, send_string("need "))
+CH(AA | AS | AE | AN | ASPC, send_string("and "))
+CH(AA | AS | AE | AN | ASPC | RIGHT, send_string("new "))
+CH(AA | AT | AN | ASPC, send_string("fan "))
+CH(AS | AT | AN | ASPC, send_string("bc "))
+CH(AA | AS | AT | AN | ASPC, send_string("can "))
+CH(AE | AT | AN | ASPC, send_string("be "))
+CH(AE | AT | AN | ASPC | RIGHT, send_string("yet "))
+CH(AA | AE | AT | AN | ASPC, send_string("ran "))
+CH(AA | AE | AT | AN | ASPC | RIGHT, send_string("next "))
+CH(AS | AE | AT | AN | ASPC, send_string("best "))
+CH(AA | AS | AE | AT | AN | ASPC, send_string("went "))
+CH(AA | AS | AE | AT | AN | ASPC | RIGHT, send_string("years "))
+CH(AA | AI | ASPC, send_string("aziz "))
+CH(AS | AI | ASPC | RIGHT, send_string("is "))
+CH(AA | AS | AI | ASPC, send_string("ask "))
+CH(AA | AS | AI | ASPC | RIGHT, send_string("kaa "))
+CH(AA | AE | AI | ASPC, send_string("xiii "))
+CH(AA | AE | AI | ASPC | RIGHT, send_string("ix "))
+CH(AS | AE | AI | ASPC, send_string("did "))
+CH(AS | AE | AI | ASPC | RIGHT, send_string("kids "))
+CH(AA | AS | AE | AI | ASPC, send_string("said "))
+CH(AA | AS | AE | AI | ASPC | RIGHT, send_string("idea "))
+CH(AT | AI | ASPC, send_string("tv "))
+CH(AT | AI | ASPC | RIGHT, send_string("it "))
+CH(AA | AT | AI | ASPC, send_string("fit "))
+CH(AA | AT | AI | ASPC | RIGHT, send_string("if "))
+CH(AS | AT | AI | ASPC, send_string("sit "))
+CH(AS | AT | AI | ASPC | RIGHT, send_string("its "))
+CH(AA | AS | AT | AI | ASPC, send_string("wait "))
+CH(AA | AS | AT | AI | ASPC | RIGHT, send_string("isaac "))
+CH(AE | AT | AI | ASPC, send_string("ever "))
+CH(AE | AT | AI | ASPC | RIGHT, send_string("ive "))
+CH(AA | AE | AT | AI | ASPC, send_string("five "))
+CH(AS | AE | AT | AI | ASPC, send_string("tried "))
+CH(AA | AS | AE | AT | AI | ASPC, send_string("first "))
+CH(AN | AI | ASPC | RIGHT, send_string("in "))
+CH(AA | AN | AI | ASPC, send_string("ah "))
+CH(AA | AN | AI | ASPC | RIGHT, send_string("han "))
+CH(AS | AN | AI | ASPC, send_string("skin "))
+CH(AS | AN | AI | ASPC | RIGHT, send_string("his "))
+CH(AA | AS | AN | AI | ASPC, send_string("wish "))
+CH(AA | AS | AN | AI | ASPC | RIGHT, send_string("has "))
+CH(AE | AN | AI | ASPC, send_string("eh "))
+CH(AE | AN | AI | ASPC | RIGHT, send_string("he "))
+CH(AA | AE | AN | AI | ASPC, send_string("annie "))
+CH(AA | AE | AN | AI | ASPC | RIGHT, send_string("yeah "))
+CH(AS | AE | AN | AI | ASPC, send_string("she "))
+CH(AS | AE | AN | AI | ASPC | RIGHT, send_string("kind "))
+CH(AA | AS | AE | AN | AI | ASPC, send_string("when "))
+CH(AA | AS | AE | AN | AI | ASPC | RIGHT, send_string("had "))
+CH(AT | AN | AI | ASPC, send_string("bit "))
+CH(AT | AN | AI | ASPC | RIGHT, send_string("hit "))
+CH(AA | AT | AN | AI | ASPC, send_string("that "))
+CH(AA | AT | AN | AI | ASPC | RIGHT, send_string("hat "))
+CH(AS | AT | AN | AI | ASPC, send_string("this "))
+CH(AS | AT | AN | AI | ASPC | RIGHT, send_string("nick "))
+CH(AA | AS | AT | AN | AI | ASPC, send_string("with "))
+CH(AA | AS | AT | AN | AI | ASPC | RIGHT, send_string("jack "))
+CH(AE | AT | AN | AI | ASPC, send_string("the "))
+CH(AE | AT | AN | AI | ASPC | RIGHT, send_string("her "))
+CH(AA | AE | AT | AN | AI | ASPC, send_string("father "))
+CH(AA | AE | AT | AN | AI | ASPC | RIGHT, send_string("have "))
+CH(AS | AE | AT | AN | AI | ASPC, send_string("these "))
+CH(AS | AE | AT | AN | AI | ASPC | RIGHT, send_string("interest "))
+CH(AA | AS | AE | AT | AN | AI | ASPC, send_string("where "))
+CH(AA | AS | AE | AT | AN | AI | ASPC | RIGHT, send_string("heard "))
+CH(AS | AO | ASPC, send_string("so "))
+CH(AA | AS | AO | ASPC, send_string("wow "))
+CH(AS | AE | AO | ASPC, send_string("do "))
+CH(AS | AE | AO | ASPC | RIGHT, send_string("odd "))
+CH(AA | AS | AE | AO | ASPC, send_string("wood "))
+CH(AA | AS | AE | AO | ASPC | RIGHT, send_string("owed "))
+CH(AT | AO | ASPC, send_string("to "))
+CH(AT | AO | ASPC | RIGHT, send_string("otto "))
+CH(AA | AT | AO | ASPC, send_string("ago "))
+CH(AA | AT | AO | ASPC | RIGHT, send_string("of "))
+CH(AS | AT | AO | ASPC, send_string("cost "))
+CH(AA | AS | AT | AO | ASPC, send_string("two "))
+CH(AE | AT | AO | ASPC, send_string("get "))
+CH(AE | AT | AO | ASPC | RIGHT, send_string("or "))
+CH(AA | AE | AT | AO | ASPC, send_string("for "))
+CH(AA | AE | AT | AO | ASPC | RIGHT, send_string("offer "))
+CH(AS | AE | AT | AO | ASPC, send_string("good "))
+CH(AS | AE | AT | AO | ASPC | RIGHT, send_string("order "))
+CH(AA | AS | AE | AT | AO | ASPC, send_string("words "))
+CH(AA | AS | AE | AT | AO | ASPC | RIGHT, send_string("offered "))
+CH(AN | AO | ASPC | RIGHT, send_string("on "))
+CH(AS | AN | AO | ASPC, send_string("soon "))
+CH(AS | AN | AO | ASPC | RIGHT, send_string("us "))
+CH(AA | AS | AN | AO | ASPC, send_string("won "))
+CH(AA | AS | AN | AO | ASPC | RIGHT, send_string("now "))
+CH(AE | AN | AO | ASPC | RIGHT, send_string("you "))
+CH(AA | AE | AN | AO | ASPC, send_string("anyone "))
+CH(AS | AE | AN | AO | ASPC, send_string("done "))
+CH(AS | AE | AN | AO | ASPC | RIGHT, send_string("use "))
+CH(AA | AS | AE | AN | AO | ASPC, send_string("down "))
+CH(AA | AS | AE | AN | AO | ASPC | RIGHT, send_string("owned "))
+CH(AT | AN | AO | ASPC, send_string("but "))
+CH(AT | AN | AO | ASPC | RIGHT, send_string("not "))
+CH(AA | AT | AN | AO | ASPC, send_string("about "))
+CH(AS | AT | AN | AO | ASPC, send_string("cut "))
+CH(AS | AT | AN | AO | ASPC | RIGHT, send_string("just "))
+CH(AA | AS | AT | AN | AO | ASPC, send_string("town "))
+CH(AE | AT | AN | AO | ASPC, send_string("turn "))
+CH(AE | AT | AN | AO | ASPC | RIGHT, send_string("your "))
+CH(AA | AE | AT | AN | AO | ASPC, send_string("before "))
+CH(AA | AE | AT | AN | AO | ASPC | RIGHT, send_string("often "))
+CH(AS | AE | AT | AN | AO | ASPC, send_string("course "))
+CH(AS | AE | AT | AN | AO | ASPC | RIGHT, send_string("once "))
+CH(AA | AS | AE | AT | AN | AO | ASPC, send_string("because "))
+CH(AA | AS | AE | AT | AN | AO | ASPC | RIGHT, send_string("understand "))
+CH(AI | AO | ASPC | RIGHT, send_string("oil "))
+CH(AA | AI | AO | ASPC, send_string("all "))
+CH(AA | AI | AO | ASPC | RIGHT, send_string("la "))
+CH(AS | AI | AO | ASPC, send_string("skills "))
+CH(AS | AI | AO | ASPC | RIGHT, send_string("look "))
+CH(AA | AS | AI | AO | ASPC, send_string("will "))
+CH(AA | AS | AI | AO | ASPC | RIGHT, send_string("low "))
+CH(AE | AI | AO | ASPC, send_string("el "))
+CH(AE | AI | AO | ASPC | RIGHT, send_string("lie "))
+CH(AA | AE | AI | AO | ASPC, send_string("alex "))
+CH(AS | AE | AI | AO | ASPC, send_string("else "))
+CH(AS | AE | AI | AO | ASPC | RIGHT, send_string("like "))
+CH(AA | AS | AE | AI | AO | ASPC, send_string("well "))
+CH(AA | AS | AE | AI | AO | ASPC | RIGHT, send_string("lead "))
+CH(AT | AI | AO | ASPC, send_string("till "))
+CH(AT | AI | AO | ASPC | RIGHT, send_string("lot "))
+CH(AA | AT | AI | AO | ASPC, send_string("fall "))
+CH(AS | AT | AI | AO | ASPC, send_string("still "))
+CH(AS | AT | AI | AO | ASPC | RIGHT, send_string("lost "))
+CH(AA | AS | AT | AI | AO | ASPC, send_string("call "))
+CH(AA | AS | AT | AI | AO | ASPC | RIGHT, send_string("last "))
+CH(AE | AT | AI | AO | ASPC, send_string("tell "))
+CH(AE | AT | AI | AO | ASPC | RIGHT, send_string("over "))
+CH(AA | AE | AT | AI | AO | ASPC, send_string("felt "))
+CH(AA | AE | AT | AI | AO | ASPC | RIGHT, send_string("life "))
+CH(AS | AE | AT | AI | AO | ASPC, send_string("told "))
+CH(AS | AE | AT | AI | AO | ASPC | RIGHT, send_string("lives "))
+CH(AA | AS | AE | AT | AI | AO | ASPC, send_string("work "))
+CH(AA | AS | AE | AT | AI | AO | ASPC | RIGHT, send_string("least "))
+CH(AN | AI | AO | ASPC | RIGHT, send_string("oh "))
+CH(AA | AN | AI | AO | ASPC, send_string("annual "))
+CH(AA | AN | AI | AO | ASPC | RIGHT, send_string("hall "))
+CH(AS | AN | AI | AO | ASPC, send_string("soul "))
+CH(AS | AN | AI | AO | ASPC | RIGHT, send_string("john "))
+CH(AA | AS | AN | AI | AO | ASPC, send_string("who "))
+CH(AA | AS | AN | AI | AO | ASPC | RIGHT, send_string("how "))
+CH(AE | AN | AI | AO | ASPC | RIGHT, send_string("only "))
+CH(AA | AE | AN | AI | AO | ASPC, send_string("alone "))
+CH(AA | AE | AN | AI | AO | ASPC | RIGHT, send_string("lay "))
+CH(AS | AE | AN | AI | AO | ASPC, send_string("should "))
+CH(AS | AE | AN | AI | AO | ASPC | RIGHT, send_string("house "))
+CH(AA | AS | AE | AN | AI | AO | ASPC, send_string("would "))
+CH(AA | AS | AE | AN | AI | AO | ASPC | RIGHT, send_string("usually "))
+CH(AT | AN | AI | AO | ASPC, send_string("thought "))
+CH(AT | AN | AI | AO | ASPC | RIGHT, send_string("into "))
+CH(AA | AT | AN | AI | AO | ASPC, send_string("again "))
+CH(AA | AT | AN | AI | AO | ASPC | RIGHT, send_string("having "))
+CH(AS | AT | AN | AI | AO | ASPC, send_string("such "))
+CH(AS | AT | AN | AI | AO | ASPC | RIGHT, send_string("looking "))
+CH(AA | AS | AT | AN | AI | AO | ASPC, send_string("without "))
+CH(AE | AT | AN | AI | AO | ASPC, send_string("through "))
+CH(AE | AT | AN | AI | AO | ASPC | RIGHT, send_string("other "))
+CH(AA | AE | AT | AN | AI | AO | ASPC, send_string("another "))
+CH(AS | AE | AT | AN | AI | AO | ASPC, send_string("could "))
+CH(AS | AE | AT | AN | AI | AO | ASPC | RIGHT, send_string("others "))
+CH(AA | AS | AE | AT | AN | AI | AO | ASPC, send_string("already "))
+CH(AA | AS | AE | AT | AN | AI | AO | ASPC | RIGHT, send_string("however "))
+CH(AA | AP | ASPC | RIGHT, send_string("pa "))
+CH(AA | AS | AP | ASPC, send_string("sap "))
+CH(AA | AS | AP | ASPC | RIGHT, send_string("pass "))
+CH(AS | AE | AP | ASPC, send_string("deep "))
+CH(AS | AE | AP | ASPC | RIGHT, send_string("'s "))
+CH(AA | AS | AE | AP | ASPC, send_string("we'd "))
+CH(AA | AS | AE | AP | ASPC | RIGHT, send_string("passed "))
+CH(AA | AT | AP | ASPC, send_string("tap "))
+CH(AA | AT | AP | ASPC | RIGHT, send_string("pat "))
+CH(AA | AS | AT | AP | ASPC, send_string("cap "))
+CH(AA | AS | AT | AP | ASPC | RIGHT, send_string("past "))
+CH(AE | AT | AP | ASPC | RIGHT, send_string("per "))
+CH(AA | AE | AT | AP | ASPC, send_string("appear "))
+CH(AA | AE | AT | AP | ASPC | RIGHT, send_string("part "))
+CH(AS | AE | AT | AP | ASPC, send_string("step "))
+CH(AS | AE | AT | AP | ASPC | RIGHT, send_string("press "))
+CH(AA | AS | AE | AT | AP | ASPC, send_string("we're "))
+CH(AA | AS | AE | AT | AP | ASPC | RIGHT, send_string("perfect "))
+CH(AA | AN | AP | ASPC, send_string("am "))
+CH(AA | AN | AP | ASPC | RIGHT, send_string("man "))
+CH(AS | AN | AP | ASPC | RIGHT, send_string("ms "))
+CH(AA | AS | AN | AP | ASPC, send_string("sam "))
+CH(AA | AS | AN | AP | ASPC | RIGHT, send_string("mass "))
+CH(AE | AN | AP | ASPC, send_string("enemy "))
+CH(AE | AN | AP | ASPC | RIGHT, send_string("my "))
+CH(AA | AE | AN | AP | ASPC, send_string("an' "))
+CH(AA | AE | AN | AP | ASPC | RIGHT, send_string("many "))
+CH(AS | AE | AN | AP | ASPC, send_string("seemed "))
+CH(AS | AE | AN | AP | ASPC | RIGHT, send_string("jem "))
+CH(AA | AS | AE | AN | AP | ASPC, send_string("same "))
+CH(AA | AS | AE | AN | AP | ASPC | RIGHT, send_string("made "))
+CH(AA | AT | AN | AP | ASPC | RIGHT, send_string("mba "))
+CH(AA | AS | AT | AN | AP | ASPC, send_string("camp "))
+CH(AA | AS | AT | AN | AP | ASPC | RIGHT, send_string("pants "))
+CH(AE | AT | AN | AP | ASPC, send_string("remember "))
+CH(AE | AT | AN | AP | ASPC | RIGHT, send_string("mr "))
+CH(AA | AE | AT | AN | AP | ASPC, send_string("army "))
+CH(AA | AE | AT | AN | AP | ASPC | RIGHT, send_string("matter "))
+CH(AS | AE | AT | AN | AP | ASPC, send_string("spent "))
+CH(AS | AE | AT | AN | AP | ASPC | RIGHT, send_string("mrs "))
+CH(AA | AS | AE | AT | AN | AP | ASPC, send_string("came "))
+CH(AA | AS | AE | AT | AN | AP | ASPC | RIGHT, send_string("parents "))
+CH(AA | AI | AP | ASPC | RIGHT, send_string("pizza "))
+CH(AS | AI | AP | ASPC, send_string("sip "))
+CH(AS | AI | AP | ASPC | RIGHT, send_string("piss "))
+CH(AE | AI | AP | ASPC | RIGHT, send_string("'i "))
+CH(AS | AE | AI | AP | ASPC, send_string("spies "))
+CH(AS | AE | AI | AP | ASPC | RIGHT, send_string("keep "))
+CH(AA | AS | AE | AI | AP | ASPC, send_string("speak "))
+CH(AA | AS | AE | AI | AP | ASPC | RIGHT, send_string("paid "))
+CH(AT | AI | AP | ASPC, send_string("tip "))
+CH(AT | AI | AP | ASPC | RIGHT, send_string("pit "))
+CH(AS | AT | AI | AP | ASPC, send_string("tips "))
+CH(AS | AT | AI | AP | ASPC | RIGHT, send_string("pick "))
+CH(AA | AS | AT | AI | AP | ASPC | RIGHT, send_string("pack "))
+CH(AE | AT | AI | AP | ASPC, send_string("trip "))
+CH(AE | AT | AI | AP | ASPC | RIGHT, send_string("i've "))
+CH(AA | AE | AT | AI | AP | ASPC, send_string("repair "))
+CH(AA | AE | AT | AI | AP | ASPC | RIGHT, send_string("private "))
+CH(AS | AE | AT | AI | AP | ASPC, send_string("despite "))
+CH(AS | AE | AT | AI | AP | ASPC | RIGHT, send_string("it's "))
+CH(AA | AS | AE | AT | AI | AP | ASPC, send_string("we've "))
+CH(AA | AS | AE | AT | AI | AP | ASPC | RIGHT, send_string("paris "))
+CH(AN | AI | AP | ASPC | RIGHT, send_string("him "))
+CH(AA | AN | AI | AP | ASPC, send_string("aim "))
+CH(AA | AN | AI | AP | ASPC | RIGHT, send_string("pain "))
+CH(AS | AN | AI | AP | ASPC, send_string("ship "))
+CH(AS | AN | AI | AP | ASPC | RIGHT, send_string("miss "))
+CH(AA | AS | AN | AI | AP | ASPC, send_string("spanish "))
+CH(AA | AS | AN | AI | AP | ASPC | RIGHT, send_string("mask "))
+CH(AE | AN | AI | AP | ASPC | RIGHT, send_string("i'm "))
+CH(AA | AE | AN | AI | AP | ASPC, send_string("examine "))
+CH(AA | AE | AN | AI | AP | ASPC | RIGHT, send_string("happy "))
+CH(AS | AE | AN | AI | AP | ASPC, send_string("she'd "))
+CH(AS | AE | AN | AI | AP | ASPC | RIGHT, send_string("mind "))
+CH(AA | AS | AE | AN | AI | AP | ASPC, send_string("shame "))
+CH(AA | AS | AE | AN | AI | AP | ASPC | RIGHT, send_string("make "))
+CH(AT | AN | AI | AP | ASPC, send_string("tim "))
+CH(AT | AN | AI | AP | ASPC | RIGHT, send_string("ibm "))
+CH(AA | AT | AN | AI | AP | ASPC | RIGHT, send_string("path "))
+CH(AS | AT | AN | AI | AP | ASPC, send_string("smith "))
+CH(AS | AT | AN | AI | AP | ASPC | RIGHT, send_string("pitch "))
+CH(AA | AS | AT | AN | AI | AP | ASPC, send_string("captain "))
+CH(AA | AS | AT | AN | AI | AP | ASPC | RIGHT, send_string("match "))
+CH(AE | AT | AN | AI | AP | ASPC, send_string("them "))
+CH(AE | AT | AN | AI | AP | ASPC | RIGHT, send_string("prevent "))
+CH(AA | AE | AT | AN | AI | AP | ASPC, send_string("remain "))
+CH(AA | AE | AT | AN | AI | AP | ASPC | RIGHT, send_string("haven't "))
+CH(AS | AE | AT | AN | AI | AP | ASPC, send_string("didn't "))
+CH(AS | AE | AT | AN | AI | AP | ASPC | RIGHT, send_string("isn't "))
+CH(AA | AS | AE | AT | AN | AI | AP | ASPC, send_string("that's "))
+CH(AA | AS | AE | AT | AN | AI | AP | ASPC | RIGHT, send_string("perhaps "))
+CH(AO | AP | ASPC | RIGHT, send_string("pop "))
+CH(AA | AS | AO | AP | ASPC, send_string("soap "))
+CH(AE | AO | AP | ASPC | RIGHT, send_string("pope "))
+CH(AS | AE | AO | AP | ASPC | RIGHT, send_string("possessed "))
+CH(AA | AS | AE | AO | AP | ASPC, send_string("exposed "))
+CH(AT | AO | AP | ASPC, send_string("top "))
+CH(AT | AO | AP | ASPC | RIGHT, send_string("pot "))
+CH(AA | AT | AO | AP | ASPC, send_string("gap "))
+CH(AA | AT | AO | AP | ASPC | RIGHT, send_string("potato "))
+CH(AS | AT | AO | AP | ASPC, send_string("stop "))
+CH(AS | AT | AO | AP | ASPC | RIGHT, send_string("post "))
+CH(AA | AS | AT | AO | AP | ASPC, send_string("gaps "))
+CH(AE | AT | AO | AP | ASPC, send_string("report "))
+CH(AE | AT | AO | AP | ASPC | RIGHT, send_string("poor "))
+CH(AA | AE | AT | AO | AP | ASPC, send_string("rapport "))
+CH(AA | AE | AT | AO | AP | ASPC | RIGHT, send_string("page "))
+CH(AS | AE | AT | AO | AP | ASPC, send_string("stopped "))
+CH(AS | AE | AT | AO | AP | ASPC | RIGHT, send_string("process "))
+CH(AA | AS | AE | AT | AO | AP | ASPC, send_string("corporate "))
+CH(AA | AS | AE | AT | AO | AP | ASPC | RIGHT, send_string("power "))
+CH(AN | AO | AP | ASPC | RIGHT, send_string("up "))
+CH(AA | AN | AO | AP | ASPC | RIGHT, send_string("mao "))
+CH(AS | AN | AO | AP | ASPC, send_string("sum "))
+CH(AS | AN | AO | AP | ASPC | RIGHT, send_string("jump "))
+CH(AA | AS | AN | AO | AP | ASPC, send_string("woman "))
+CH(AA | AS | AN | AO | AP | ASPC | RIGHT, send_string("mason "))
+CH(AE | AN | AO | AP | ASPC | RIGHT, send_string("money "))
+CH(AS | AE | AN | AO | AP | ASPC, send_string("some "))
+CH(AS | AE | AN | AO | AP | ASPC | RIGHT, send_string("opened "))
+CH(AA | AS | AE | AN | AO | AP | ASPC, send_string("women "))
+CH(AA | AS | AE | AN | AO | AP | ASPC | RIGHT, send_string("paused "))
+CH(AT | AN | AO | AP | ASPC, send_string("tom "))
+CH(AT | AN | AO | AP | ASPC | RIGHT, send_string("put "))
+CH(AA | AT | AN | AO | AP | ASPC, send_string("among "))
+CH(AA | AT | AN | AO | AP | ASPC | RIGHT, send_string("obama "))
+CH(AS | AT | AN | AO | AP | ASPC, send_string("common "))
+CH(AS | AT | AN | AO | AP | ASPC | RIGHT, send_string("most "))
+CH(AA | AS | AT | AN | AO | AP | ASPC, send_string("famous "))
+CH(AA | AS | AT | AN | AO | AP | ASPC | RIGHT, send_string("moscow "))
+CH(AE | AT | AN | AO | AP | ASPC, send_string("room "))
+CH(AE | AT | AN | AO | AP | ASPC | RIGHT, send_string("more "))
+CH(AA | AE | AT | AN | AO | AP | ASPC, send_string("from "))
+CH(AA | AE | AT | AN | AO | AP | ASPC | RIGHT, send_string("program "))
+CH(AS | AE | AT | AN | AO | AP | ASPC, send_string("don't "))
+CH(AS | AE | AT | AN | AO | AP | ASPC | RIGHT, send_string("person "))
+CH(AA | AS | AE | AT | AN | AO | AP | ASPC, send_string("company "))
+CH(AA | AS | AE | AT | AN | AO | AP | ASPC | RIGHT, send_string("major "))
+CH(AI | AO | AP | ASPC | RIGHT, send_string("pool "))
+CH(AA | AI | AO | AP | ASPC, send_string("apollo "))
+CH(AA | AI | AO | AP | ASPC | RIGHT, send_string("lap "))
+CH(AS | AI | AO | AP | ASPC, send_string("slip "))
+CH(AS | AI | AO | AP | ASPC | RIGHT, send_string("lips "))
+CH(AA | AS | AI | AO | AP | ASPC, send_string("slap "))
+CH(AA | AS | AI | AO | AP | ASPC | RIGHT, send_string("pillow "))
+CH(AE | AI | AO | AP | ASPC | RIGHT, send_string("people "))
+CH(AA | AE | AI | AO | AP | ASPC, send_string("apple "))
+CH(AA | AE | AI | AO | AP | ASPC | RIGHT, send_string("pale "))
+CH(AS | AE | AI | AO | AP | ASPC, send_string("spoke "))
+CH(AS | AE | AI | AO | AP | ASPC | RIGHT, send_string("people's "))
+CH(AA | AS | AE | AI | AO | AP | ASPC, send_string("we'll "))
+CH(AA | AS | AE | AI | AO | AP | ASPC | RIGHT, send_string("please "))
+CH(AT | AI | AO | AP | ASPC | RIGHT, send_string("pilot "))
+CH(AA | AT | AI | AO | AP | ASPC, send_string("flip "))
+CH(AA | AT | AI | AO | AP | ASPC | RIGHT, send_string("plato "))
+CH(AS | AT | AI | AO | AP | ASPC, send_string("split "))
+CH(AS | AT | AI | AO | AP | ASPC | RIGHT, send_string("politics "))
+CH(AA | AS | AT | AI | AO | AP | ASPC, send_string("capital "))
+CH(AA | AS | AT | AI | AO | AP | ASPC | RIGHT, send_string("political "))
+CH(AE | AT | AI | AO | AP | ASPC, send_string("grip "))
+CH(AE | AT | AI | AO | AP | ASPC | RIGHT, send_string("prove "))
+CH(AA | AE | AT | AI | AO | AP | ASPC, send_string("april "))
+CH(AA | AE | AT | AI | AO | AP | ASPC | RIGHT, send_string("plate "))
+CH(AS | AE | AT | AI | AO | AP | ASPC, send_string("replied "))
+CH(AS | AE | AT | AI | AO | AP | ASPC | RIGHT, send_string("police "))
+CH(AA | AS | AE | AT | AI | AO | AP | ASPC, send_string("special "))
+CH(AA | AS | AE | AT | AI | AO | AP | ASPC | RIGHT, send_string("place "))
+CH(AN | AI | AO | AP | ASPC | RIGHT, send_string("million "))
+CH(AA | AN | AI | AO | AP | ASPC, send_string("animal "))
+CH(AA | AN | AI | AO | AP | ASPC | RIGHT, send_string("human "))
+CH(AS | AN | AI | AO | AP | ASPC, send_string("shop "))
+CH(AS | AN | AI | AO | AP | ASPC | RIGHT, send_string("mission "))
+CH(AA | AS | AN | AI | AO | AP | ASPC, send_string("small "))
+CH(AA | AS | AN | AI | AO | AP | ASPC | RIGHT, send_string("plans "))
+CH(AE | AN | AI | AO | AP | ASPC, send_string("employee "))
+CH(AE | AN | AI | AO | AP | ASPC | RIGHT, send_string("home "))
+CH(AA | AE | AN | AI | AO | AP | ASPC, send_string("example "))
+CH(AA | AE | AN | AI | AO | AP | ASPC | RIGHT, send_string("play "))
+CH(AS | AE | AN | AI | AO | AP | ASPC, send_string("simply "))
+CH(AS | AE | AN | AI | AO | AP | ASPC | RIGHT, send_string("pulled "))
+CH(AA | AS | AE | AN | AI | AO | AP | ASPC, send_string("explained "))
+CH(AA | AS | AE | AN | AI | AO | AP | ASPC | RIGHT, send_string("played "))
+CH(AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("might "))
+CH(AA | AT | AN | AI | AO | AP | ASPC, send_string("film "))
+CH(AA | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("imagination "))
+CH(AS | AT | AN | AI | AO | AP | ASPC, send_string("coming "))
+CH(AS | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("much "))
+CH(AA | AS | AT | AN | AI | AO | AP | ASPC, send_string("almost "))
+CH(AA | AS | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("making "))
+CH(AE | AT | AN | AI | AO | AP | ASPC, send_string("government "))
+CH(AE | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("mother "))
+CH(AA | AE | AT | AN | AI | AO | AP | ASPC, send_string("family "))
+CH(AA | AE | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("important "))
+CH(AS | AE | AT | AN | AI | AO | AP | ASPC, send_string("something "))
+CH(AS | AE | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("possible "))
+CH(AA | AS | AE | AT | AN | AI | AO | AP | ASPC | RIGHT, send_string("himself "))
