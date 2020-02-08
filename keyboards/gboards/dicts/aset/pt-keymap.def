@@ -31,7 +31,6 @@ KEYS(AS|AP,                             cmb_e57ca193d8778bdc,                  {
 PRES(AA|AE,                                                                                          KC_X)
 PRES(AT|AP,                                                                                       KC_BSPC)
 PRES(AS|AN,                                                                                          KC_J)
-PRES(AA|AP,                                                                                       KC_QUOT)
 PRES(AA|AT,                                                                                          KC_F)
 PRES(AS|AE,                                                                                          KC_D)
 PRES(AE|AO,                                                                                       KC_MINS)

@@ -412,7 +412,7 @@ void REPEAT(void) {
   return;
 }
 void SET_STICKY(C_SIZE stick) {
-  stickyBits ^= stick;
+  stickyBits = stickyBits == stick ? 0 : stick;
   return;
 }
 void CLICK_MOUSE(uint8_t kc) {
