@@ -33,7 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix pins */
 #define DIRECT_PINS { \
-    { E6,D7,C6,D4, B5,B6, F6,F7,B1,B2 } \
+    { E6,D7,C6,D4, B5,B6, F6,F7,B1,B3 } \
 }
 
 #define NO_ACTION_LAYER
