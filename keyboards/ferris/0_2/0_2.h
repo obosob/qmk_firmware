@@ -40,4 +40,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	{K3_5,  K3_6, KC_NO,  KC_NO, KC_NO}\
 }
 
+#define LAYOUT_split_3x5_2 LAYOUT
 // clang-format on
