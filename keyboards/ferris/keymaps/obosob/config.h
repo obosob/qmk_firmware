@@ -23,6 +23,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define IGNORE_MOD_TAP_INTERRUPT
 
 #ifdef COMBO_ENABLE
-#define COMBO_TERM 60
+#define COMBO_TERM 40
 #define COMBO_COUNT 28
 #endif
