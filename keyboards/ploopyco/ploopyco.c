@@ -181,10 +181,10 @@ bool process_record_kb(uint16_t keycode, keyrecord_t* record) {
 
     if (keycode == DRAG_SCROLL) {
 #ifdef PLOOPY_DRAGSCROLL_MOMENTARY
-        is_drag_scroll = record->event.pressed;
+        drag_scroll_set(record->event.pressed);
 #else
         if (record->event.pressed) {
-            is_drag_scroll ^= 1;
+            drag_scroll_toggle();
         }
 #endif
     }
@@ -233,4 +233,30 @@ void eeconfig_init_kb(void) {
     keyboard_config.dpi_config = PLOOPY_DPI_DEFAULT;
     eeconfig_update_kb(keyboard_config.raw);
     eeconfig_init_user();
+}
+
+
+void drag_scroll_enable(void)
+{
+    drag_scroll_set(true);
+}
+
+void drag_scroll_disable(void)
+{
+    drag_scroll_set(false);
+}
+
+void drag_scroll_toggle(void)
+{
+    is_drag_scroll ^= 1;
+}
+
+void drag_scroll_set(bool enabled)
+{
+    is_drag_scroll = enabled;
+}
+
+bool drag_scroll_get()
+{
+    return is_drag_scroll;
 }
